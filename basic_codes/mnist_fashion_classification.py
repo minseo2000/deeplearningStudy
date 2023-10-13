@@ -4,16 +4,8 @@ from tensorflow.keras.utils import plot_model
 (train_image, train_label), (test_image, test_label) = tf.keras.datasets.fashion_mnist.load_data()
 
 
-print(train_image[:1])
-print(train_label[:1])
-
-
 train_image = train_image / 255.0
 test_image = test_image / 255.0
-
-print(train_image[:1])
-print(train_label[:1])
-
 
 model = tf.keras.models.Sequential([
     tf.keras.layers.Flatten(input_shape = (28, 28)),
@@ -27,4 +19,18 @@ model.compile(
     metrics=['accuracy']
 )
 
-plot_model(model, to_file='./image.png')
+class myCallback(tf.keras.callbacks.Callback):
+    def on_epoch_end(self, epoch, logs={}):
+        if(logs.get('accuracy') > 0.95):
+            print("\n 정확도 95%에 도달하여 훈련을 멈춥니다!")
+            self.model.stop_training = True
+
+callbacks = myCallback()
+
+model.fit(
+    train_image,
+    train_label,
+    epochs = 50,
+    callbacks= [callbacks]
+)
+

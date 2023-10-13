@@ -44,8 +44,24 @@ test_image = test_image / 255.0
 
 <hr>
 
-- early stopped algorithm codes
+- early stopped algorithm codes <br>
+클래스를 선언해서, on_epoch_end 함수를 정의해서 조기종료 함수를 만들어 줄 수 있다.
 ```commandline
+
+class myCallback(tf.keras.callbacks.Callback):
+    def on_epoch_end(self, epoch, logs={}):
+        if(logs.get('accuracy') > 0.95):
+            print("\n 정확도 95%에 도달하여 훈련을 멈춥니다!")
+            self.model.stop_training = True
+
+callbacks = myCallback()
+
+model.fit(
+    train_image,
+    train_label,
+    epochs = 50,
+    callbacks= [callbacks]
+)
 
 ```
 
