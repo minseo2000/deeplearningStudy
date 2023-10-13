@@ -24,7 +24,8 @@ print(train_label[:1])
 
 | Result Image |
 |--------------|
-|              |
+|    <img width="882" alt="load_data_result" src="https://github.com/minseo2000/deeplearningStudy/assets/59526414/7a11f983-a23a-431f-85fb-7b84d1036a04">
+          |
 <hr>
 
 - Data Scaling
@@ -38,7 +39,8 @@ test_image = test_image / 255.0
 
 | Result Image |
 |--------------|
-|              |
+|      <img width="882" alt="data_scaling_result" src="https://github.com/minseo2000/deeplearningStudy/assets/59526414/174009ca-5ba3-4d47-945a-2843b496b26e">
+        |
 
 <hr>
 
@@ -87,7 +89,9 @@ model.evaluate(
 
 | Result Image |
 |--------------|
-|              |
+|     <img width="522" alt="model_result" src="https://github.com/minseo2000/deeplearningStudy/assets/59526414/bac6763e-61b3-4d11-94b1-546925eec75c">|
+|<img width="756" alt="train_result" src="https://github.com/minseo2000/deeplearningStudy/assets/59526414/ec958dcb-0c0b-428a-bb87-9af556469211">|
+
 
 <hr>
 
@@ -104,5 +108,6 @@ plot_model(model)
 
 | Result Image |
 |--------------|
-|              |
+|     ![model_image](https://github.com/minseo2000/deeplearningStudy/assets/59526414/82684255-79b1-4e07-b624-55c7c2730a51)
+         |
 
