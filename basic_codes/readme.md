@@ -69,7 +69,7 @@ model.fit(
 
 | Result Image |
 |--------------|
-|              |
+|    <img width="741" alt="early_stop" src="https://github.com/minseo2000/deeplearningStudy/assets/59526414/63916609-bbe7-40de-a4d3-ad5aa8c98720">|
 
 <hr>
 
