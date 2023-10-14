@@ -7,6 +7,11 @@
 - 조기 종료 알고리즘을 직접 만들 수 있다.
 - 데이터 스케일링에 대해 알 수 있다.
 
+## 단순한 맵핑 구조의 딥러닝
+
+<img width="663" alt="image" src="https://github.com/minseo2000/deeplearningStudy/assets/59526414/e8a0d153-f08b-4db9-a7da-b1765f225519">
+
+
 ## About Codes
 
 - load fashion_mnist data
@@ -124,6 +129,7 @@ plot_model(model)
 
 | Result Image |
 |--------------|
-|     ![model_image](https://github.com/minseo2000/deeplearningStudy/assets/59526414/82684255-79b1-4e07-b624-55c7c2730a51)
-         |
+|     ![model_image](https://github.com/minseo2000/deeplearningStudy/assets/59526414/82684255-79b1-4e07-b624-55c7c2730a51)|
+
+
 
