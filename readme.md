@@ -14,6 +14,8 @@
 2. Loss function and optimizer Tip
 3. Datasets tips (tensorflow_datasets, tensorflow_addons)
 4. ETL process
+5. NLP Words
+6. CSV FILE LOADER
 
 ## basic_codes
 1. fashion mnist classification files (early stopped, dense model)
@@ -132,3 +134,14 @@ train_batches = train.shuffle(100).batch(32)
 validation_batches = val_data.batch(32)
 
 ```
+
+# NLP Words
+
+| word                     | 설명                                       |
+|--------------------------|------------------------------------------|
+| 토큰                       | {'is' : 1, 'day' : 2}                    |
+| 시퀀스                      | [[3,1,4,5,2]]                            |
+| OOV(out of vocabulary)토큰 | 없는 데이터를 표현하는 토큰                          |
+| 프리패딩                     | 짧은 문장을 긴 문장의 길이에 맞추기 위해 시작 부분을 0으로 채우는 것 |
+
+# CSV FILE LOADER
