@@ -20,7 +20,7 @@
 # Codes Description
 | 코드                 | 아웃풋 | 설명                             |
 |--------------------|-----|--------------------------------|
-| str.maketrans      |     | 1인자에서 2인자로 대치하는데, 3인자를 제외하고 대치 |
-| string.punctuation |     | 특수 기호 목록 출력                    |
+| str.maketrans      |<img width="400" alt="maketrans" src="https://github.com/minseo2000/deeplearningStudy/assets/59526414/e0d1df44-a9e3-43de-92ed-822dad6433d4">| 1인자에서 2인자로 대치하는데, 3인자를 제외하고 대치 |
+| string.punctuation | <img width="400" alt="string punctuation" src="https://github.com/minseo2000/deeplearningStudy/assets/59526414/cda131ef-95a3-4a2a-89d6-e250da2ec28a">| 특수 기호 목록 출력                    |
 | json.load()        |     | json파일을 로드함.                   |
-| get_text()         |     | html 태그를 제거해서 출력함              |
+| get_text()         | <img width="400" alt="get_text" src="https://github.com/minseo2000/deeplearningStudy/assets/59526414/a9db63d5-64b2-4534-8207-5e8d8406e1ad">| html 태그를 제거해서 출력함              |
