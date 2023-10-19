@@ -24,3 +24,20 @@
 | string.punctuation | <img width="400" alt="string punctuation" src="https://github.com/minseo2000/deeplearningStudy/assets/59526414/cda131ef-95a3-4a2a-89d6-e250da2ec28a">| 특수 기호 목록 출력                    |
 | json.load()        |     | json파일을 로드함.                   |
 | get_text()         | <img width="400" alt="get_text" src="https://github.com/minseo2000/deeplearningStudy/assets/59526414/a9db63d5-64b2-4534-8207-5e8d8406e1ad">| html 태그를 제거해서 출력함              |
+
+
+# 요약서
+| ?       | 설명            | example_Data             |
+|---------|---------------|--------------------------|
+| Problem | 빈정대는 헤드라인 감지기 |                          |
+| Dataset | 'sarcasm.json' | {"headlide" : "sentece"} |
+
+## 데이터 전처리 과정
+| 작업                                                       | 설명              | 이미지 결과 |
+|----------------------------------------------------------|-----------------|--------|
+| 데이터 로딩                                                   | json에서 데이터를 가져옴 |        |
+| 불용어 정의                                                   | 불용어를 모두 제거한다.   |        |
+| 소문자로 변환<br/>","->" , "<br/>"." -> " . "<br/>"/" -> " / " | 문자 통일           |        | 
+| html 태그 제거                                               | 태그 불필요          |        |
+| 토큰화 및 시퀀스로 만들기                                           | 단어장 만든다.        |        |
+| 모델에 넣기                                                   | 학습 모델에 넣기       ||
