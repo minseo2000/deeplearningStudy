@@ -35,9 +35,9 @@
 ## 데이터 전처리 과정
 | 작업                                                       | 설명              | 이미지 결과 |
 |----------------------------------------------------------|-----------------|--------|
-| 데이터 로딩                                                   | json에서 데이터를 가져옴 |        |
-| 불용어 정의                                                   | 불용어를 모두 제거한다.   |        |
-| 소문자로 변환<br/>","->" , "<br/>"." -> " . "<br/>"/" -> " / " | 문자 통일           |        | 
-| html 태그 제거                                               | 태그 불필요          |        |
-| 토큰화 및 시퀀스로 만들기                                           | 단어장 만든다.        |        |
-| 모델에 넣기                                                   | 학습 모델에 넣기       ||
+| 데이터 로딩                                                   | json에서 데이터를 가져옴 |  <img width="621" alt="json" src="https://github.com/minseo2000/deeplearningStudy/assets/59526414/b2315ac0-8657-4cf0-bbdc-20bb83e1087a"> |
+| 불용어 정의                                                   | 불용어를 모두 제거한다.   | <img width="991" alt="stop_words" src="https://github.com/minseo2000/deeplearningStudy/assets/59526414/b6c57ab7-f8a9-4ae5-8d8f-38ad55a1d1fa">|
+| 소문자로 변환<br/>","->" , "<br/>"." -> " . "<br/>"/" -> " / " | 문자 통일           | <img width="621" alt="ridoftext" src="https://github.com/minseo2000/deeplearningStudy/assets/59526414/f72e0e0e-7c75-46b2-96ed-91b06adf1a7b">| 
+| html 태그 제거                                               | 태그 불필요          | <img width="435" alt="get_text" src="https://github.com/minseo2000/deeplearningStudy/assets/59526414/be07d28e-9f9e-4b8b-b0d0-34f14741a62f"> |
+| 토큰화 및 시퀀스로 만들기                                           | 단어장 만든다.        | <img width="621" alt="tokenizer" src="https://github.com/minseo2000/deeplearningStudy/assets/59526414/5abab696-62cc-4360-9523-5a385d014323">|
+| 모델에 넣기                                                   | 학습 모델에 넣기       |<img width="621" alt="model" src="https://github.com/minseo2000/deeplearningStudy/assets/59526414/8bf19d32-ab89-455f-9eef-8a43715bbe8d">|
