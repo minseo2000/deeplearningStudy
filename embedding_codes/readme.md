@@ -41,3 +41,10 @@
 | html 태그 제거                                               | 태그 불필요          | <img width="435" alt="get_text" src="https://github.com/minseo2000/deeplearningStudy/assets/59526414/be07d28e-9f9e-4b8b-b0d0-34f14741a62f"> |
 | 토큰화 및 시퀀스로 만들기                                           | 단어장 만든다.        | <img width="621" alt="tokenizer" src="https://github.com/minseo2000/deeplearningStudy/assets/59526414/5abab696-62cc-4360-9523-5a385d014323">|
 | 모델에 넣기                                                   | 학습 모델에 넣기       |<img width="621" alt="model" src="https://github.com/minseo2000/deeplearningStudy/assets/59526414/8bf19d32-ab89-455f-9eef-8a43715bbe8d">|
+
+# 결론
+- 단어를 컴퓨터에게 이해시키고, 컴퓨터가 본인만의 기준으로 단어를 구분할 수 있도록 Embedding 작업을 시킨다.
+- Embedding은 다음과 같은 것.
+```commandline
+예를 들어 "happy"라는 단어를 벡터화 시킴 이때 벡터의 차원을 정한다. ex 벡터 차원이 16차원이면 [0.111, 0.111, ---, 0.111] (16개)의 벡터가 생성된다.
+```

@@ -1,13 +1,16 @@
 # Deep Learning Study files
 
 # Working Contents
-| To Do                                                                  | Date       | Hour | REPO LINK    |
-|------------------------------------------------------------------------|------------|------|--------------|
-| mnist datasets by Sequential model                                     | 2023.10.10 | 2H   |https://github.com/minseo2000/deeplearningStudy/tree/master/basic_codes|
-| mnist datasets by CNN model<br/>horse and person datasets by CNN model | 2023.10.17 | 2H   |https://github.com/minseo2000/deeplearningStudy/tree/master/cnn_filter_codes|
-| 1. Image Generator<br/>2. 전이학습<br/>3. 드롭아웃 규제                          | 2023.10.17 | 1H   ||
-| tensorflow datasets<br/>tensorflow addons<br/>ETL Process              | 2023.10.18 | 1H   ||
-| Word Embedding ( NLP )                                                 | 2023.10.19 | 1H   |https://github.com/minseo2000/deeplearningStudy/tree/master/embedding_codes|
+| To Do                                                                                                                                                        | Date       | Hour | REPO LINK                                                                 |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|------|---------------------------------------------------------------------------|
+| mnist datasets by Sequential model                                                                                                                           | 2023.10.10 | 2H   | https://github.com/minseo2000/deeplearningStudy/tree/master/basic_codes   |
+| mnist datasets by CNN model<br/>horse and person datasets by CNN model                                                                                       | 2023.10.17 | 2H   | https://github.com/minseo2000/deeplearningStudy/tree/master/cnn_filter_codes |
+| 1. Image Generator<br/>2. 전이학습<br/>3. 드롭아웃 규제                                                                                                                | 2023.10.17 | 1H   |                                                                           |
+| tensorflow datasets<br/>tensorflow addons<br/>ETL Process                                                                                                    | 2023.10.18 | 1H   |                                                                           |
+| Word Embedding ( NLP )                                                                                                                                       | 2023.10.19 | 1H   | https://github.com/minseo2000/deeplearningStudy/tree/master/embedding_codes |
+| 1. Learning rate<br/>2. vocab_size<br/>3. Embedding Dimenssion<br/>4. Model Structure<br/>5. Dropout<br/> 6. Regulation<br/>7. Tensorflow Embedding Projector | 2023.10.20 | 1H   |                                                                           |
+| RNN, LSTM, Bidirectional-LSTM                                                                                                                                | 2023.10.20 | 1H   |                                                                           |
+| 문자기반, 단어기반 생성 모델 by LSTM                                                                                                                                     | 2023.10.20 | 1H   |                                                                           |
 
 
 # DEEP LEARNING WORDS
@@ -24,6 +27,8 @@
 4. ETL process
 5. NLP Words
 6. CSV FILE LOADER
+7. Graph_codes
+8. Embedding 시각화 codes
 
 ## basic_codes
 1. fashion mnist classification files (early stopped, dense model)
@@ -32,16 +37,17 @@
 
 ## Model Training Tips
 
-| Category | Tips                                          | 효과      |
-|----------|-----------------------------------------------|---------|
-| CNN      | 1. Using ImageGenerator Class for Overfitting | 과대적합 방지 |
-| CNN      | 2. Dropout Regulation                         | 과대적합 방지 |
-| CNN      | 1. Using ImageGenerator Class for Overfitting |         |
-| CNN      | 1. Using ImageGenerator Class for Overfitting |         |
-| CNN      | 1. Using ImageGenerator Class for Overfitting |         |
-| CNN      | 1. Using ImageGenerator Class for Overfitting |         |
-| CNN      | 1. Using ImageGenerator Class for Overfitting |         |
-| CNN      | 1. Using ImageGenerator Class for Overfitting |         |
+| Category  | Tips                                          | 효과      | Image | 주의사항                    |
+|-----------|-----------------------------------------------|---------|-------|-------------------------|
+| CNN       | 1. Using ImageGenerator Class for Overfitting | 과대적합 방지 |       |                         |
+| CNN       | 2. Dropout Regulation                         | 과대적합 방지 |       | 뉴런의 개수가 적다면 좋은 방법은 아니다.<br/> |
+| Embedding | 3. Optimizer's Learning Rate                  | 과대적합 방지 |       |                         |
+| Embedding | 4. 어휘사전을 구성할 때 특정단어가 많이 발생하는 어휘사전을 사용한다면?     | 과대적합 방지 |       |                         |
+| Embedding | 5. 어휘사전의 4제곱근을 한 수를 차원의 수로 사용하라!              | 과대적합 방지 |       |                         |
+| CNN       | 1. Using ImageGenerator Class for Overfitting |         |       |                         |
+| CNN       | 1. Using ImageGenerator Class for Overfitting |         |       |                         |
+| CNN       | 1. Using ImageGenerator Class for Overfitting |         |       |                         |
+
 
 
 ## loss function and optimizer Tips
@@ -153,3 +159,65 @@ validation_batches = val_data.batch(32)
 | 프리패딩                     | 짧은 문장을 긴 문장의 길이에 맞추기 위해 시작 부분을 0으로 채우는 것 |
 
 # CSV FILE LOADER
+
+
+
+# Graph_codes
+```commandline
+# graph codes
+import matplotlib.pyplot as plt
+
+def show_graph(history):
+    # 그래프 출력 
+    # 훈련 과정 기록 가져오기
+    train_loss = history.history['loss']
+    val_loss = history.history['val_loss']
+    train_acc = history.history['accuracy']
+    val_acc = history.history['val_accuracy']
+
+    # 그래프 출력
+    epochs = range(1, len(train_loss) + 1)
+
+    # 손실 그래프
+    plt.figure(figsize=(12, 4))
+    plt.subplot(1, 2, 1)
+    plt.plot(epochs, train_loss, 'b', label='Training Loss')
+    plt.plot(epochs, val_loss, 'r', label='Validation Loss')
+    plt.title('Training and Validation Loss')
+    plt.xlabel('Epochs')
+    plt.ylabel('Loss')
+    plt.legend()
+
+    # 정확도 그래프
+    plt.subplot(1, 2, 2)
+    plt.plot(epochs, train_acc, 'b', label='Training Accuracy')
+    plt.plot(epochs, val_acc, 'r', label='Validation Accuracy')
+    plt.title('Training and Validation Accuracy')
+    plt.xlabel('Epochs')
+    plt.ylabel('Accuracy')
+    plt.legend()
+
+    plt.show()
+```
+
+# Embedding 시각화 codes
+```commandline
+import io
+
+reverse_word_index = dict([(value, key) for (key, value) in word_index.items()])
+
+e = model.layers[0]
+weights = e.get_weights()[0]
+print(weights.shape)
+out_v = io.open('vecs.tsv', 'w', encoding='utf-8')
+out_m = io.open('meta.tsv', 'w', encoding='utf-8')
+
+for word_num in range(1, vocab_size):
+    word = reverse_word_index[word_num]
+    embeddings = weights[word_num]
+    out_m.write(word+'\n')
+    out_v.write('\t'.join([str(x) for x in embeddings])+'\n')
+
+out_v.close()
+out_m.close()
+```
