@@ -1,12 +1,20 @@
 # Deep Learning Study files
 
 # Working Contents
-| To Do                                                                 | Date       | Hour |
-|-----------------------------------------------------------------------|------------|------|
-| mnist datasets by Sequential model                                    | 2023.10.10 | 2H   |
-| mnist datasets by CNN model<br/>horse and person datasets by CNN model | 2023.10.17 | 2H   |
-| 1. Image Generator<br/>2. 전이학습<br/>3. 드롭아웃 규제                         | 2023.10.17 | 1H   |
-| tensorflow datasets<br/>tensorflow addons<br/>ETL Process             | 2023.10.18 | 1H   |
+| To Do                                                                  | Date       | Hour | REPO LINK    |
+|------------------------------------------------------------------------|------------|------|--------------|
+| mnist datasets by Sequential model                                     | 2023.10.10 | 2H   |https://github.com/minseo2000/deeplearningStudy/tree/master/basic_codes|
+| mnist datasets by CNN model<br/>horse and person datasets by CNN model | 2023.10.17 | 2H   |https://github.com/minseo2000/deeplearningStudy/tree/master/cnn_filter_codes|
+| 1. Image Generator<br/>2. 전이학습<br/>3. 드롭아웃 규제                          | 2023.10.17 | 1H   ||
+| tensorflow datasets<br/>tensorflow addons<br/>ETL Process              | 2023.10.18 | 1H   ||
+| Word Embedding ( NLP )                                                 | 2023.10.19 | 1H   |https://github.com/minseo2000/deeplearningStudy/tree/master/embedding_codes|
+
+
+# DEEP LEARNING WORDS
+| Name    | Description    |
+|---------|----------------|
+| Auto ML | 하이퍼파라미터 자동 학습? |
+
 
 
 # 목차
