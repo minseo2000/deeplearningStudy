@@ -7,8 +7,8 @@
 | word      | Description                  | 예시                     |
 |-----------|------------------------------|------------------------|
 | 상태 공간     | 문제가 정의하고 있는 데이터의 범위를 말한다.    | 주사위의 수 예측일 때 상태공간은 1~6 |
-| 과대적합      | 모델이 훈련데이터에 과도하게 학습된 것을 말함.   |                        |
-| 과소적합      | 모델이 훈련데이터에 너무 학습이 안된 상태를 말함. |                        |
+| 과대적합      | 모델이 훈련데이터에 과도하게 학습된 것을 말함.   | <img width="197" alt="overfitting" src="https://github.com/minseo2000/deeplearningStudy/assets/59526414/88e1b949-8607-401c-983a-6f8b96eb16a8"> |
+| 과소적합      | 모델이 훈련데이터에 너무 학습이 안된 상태를 말함. |<img width="197" alt="fitting" src="https://github.com/minseo2000/deeplearningStudy/assets/59526414/bb89dc8b-463d-4d07-b8dd-2f6385db9e89">|
 | k-겹 교차 검증 |                              |  햣                      |
 
 
