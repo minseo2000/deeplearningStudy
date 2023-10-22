@@ -16,6 +16,20 @@ mv .json (home_dir)/.kaggle
 ```
 
 ## use kaggle commend
+
+- Download datasets
 ```commandline
 kaggle competitions download -c titanic
 ```
+
+- Submit datasets
+```commandline
+kaggle competitions submit <Competition-name> -f <file-name> -m <message>
+```
+
+- Competitions List
+```commandline
+kaggle competitions list
+```
+
+
