@@ -1,16 +1,18 @@
 # Deep Learning Study files
 
 # Working Contents
-| To Do                                                                                                                                                        | Date       | Hour | REPO LINK                                                                 |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|------|---------------------------------------------------------------------------|
-| mnist datasets by Sequential model                                                                                                                           | 2023.10.10 | 2H   | https://github.com/minseo2000/deeplearningStudy/tree/master/basic_codes   |
-| mnist datasets by CNN model<br/>horse and person datasets by CNN model                                                                                       | 2023.10.17 | 2H   | https://github.com/minseo2000/deeplearningStudy/tree/master/cnn_filter_codes |
-| 1. Image Generator<br/>2. 전이학습<br/>3. 드롭아웃 규제                                                                                                                | 2023.10.17 | 1H   |                                                                           |
-| tensorflow datasets<br/>tensorflow addons<br/>ETL Process                                                                                                    | 2023.10.18 | 1H   |                                                                           |
-| Word Embedding ( NLP )                                                                                                                                       | 2023.10.19 | 1H   | https://github.com/minseo2000/deeplearningStudy/tree/master/embedding_codes |
-| 1. Learning rate<br/>2. vocab_size<br/>3. Embedding Dimenssion<br/>4. Model Structure<br/>5. Dropout<br/> 6. Regulation<br/>7. Tensorflow Embedding Projector | 2023.10.20 | 1H   |                                                                           |
-| RNN, LSTM, Bidirectional-LSTM                                                                                                                                | 2023.10.20 | 1H   |                                                                           |
-| 문자기반, 단어기반 생성 모델 by LSTM                                                                                                                                     | 2023.10.20 | 1H   |                                                                           |
+| To Do                                                                                                                                                         | Date       | Hour | REPO LINK                                                                    |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|------|------------------------------------------------------------------------------|
+| mnist datasets by Sequential model                                                                                                                            | 2023.10.10 | 2H   | https://github.com/minseo2000/deeplearningStudy/tree/master/basic_codes      |
+| mnist datasets by CNN model<br/>horse and person datasets by CNN model                                                                                        | 2023.10.17 | 2H   | https://github.com/minseo2000/deeplearningStudy/tree/master/cnn_filter_codes |
+| 1. Image Generator<br/>2. 전이학습<br/>3. 드롭아웃 규제                                                                                                                 | 2023.10.17 | 1H   |                                                                              |
+| tensorflow datasets<br/>tensorflow addons<br/>ETL Process                                                                                                     | 2023.10.18 | 1H   |                                                                              |
+| Word Embedding ( NLP )                                                                                                                                        | 2023.10.19 | 1H   | https://github.com/minseo2000/deeplearningStudy/tree/master/embedding_codes  |
+| 1. Learning rate<br/>2. vocab_size<br/>3. Embedding Dimenssion<br/>4. Model Structure<br/>5. Dropout<br/> 6. Regulation<br/>7. Tensorflow Embedding Projector | 2023.10.20 | 1H   |                                                                              |
+| RNN, LSTM, Bidirectional-LSTM                                                                                                                                 | 2023.10.20 | 1H   |                                                                              |
+| 문자기반, 단어기반 생성 모델 by LSTM                                                                                                                                      | 2023.10.20 | 1H   |                                                                              |
+| kaggle api 사용법                                                                                                                                                | 2023.10.22 |      |                                                                              |
+| Chat_bot.csv datasets 분석하기, 어절,음절,형태소 길이를 기반으로                                                                                                                ||||
 
 
 # DEEP LEARNING WORDS
