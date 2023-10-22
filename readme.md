@@ -14,11 +14,18 @@
 | kaggle api 사용법                                                                                                                                                | 2023.10.22 |      |                                                                              |
 | Chat_bot.csv datasets 분석하기, 어절,음절,형태소 길이를 기반으로                                                                                                                ||||
 
+## Working Contents
+| 분야        | Repo Link |
+|-----------|-----------|
+| 시각 처리 공부  |  https://github.com/minseo2000/deeplearningStudy/tree/master/%EC%8B%9C%EA%B0%81         |
+| 언어 처리 공부  |   https://github.com/minseo2000/deeplearningStudy/tree/master/%EC%96%B8%EC%96%B4        |
+| AutoML 공부 |   https://github.com/minseo2000/deeplearningStudy/tree/master/auto_ML        |
 
-# DEEP LEARNING WORDS
-| Name    | Description    |
-|---------|----------------|
-| Auto ML | 하이퍼파라미터 자동 학습? |
+
+
+
+
+
 
 
 
