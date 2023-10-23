@@ -3,7 +3,8 @@
 
 
 ## 전체적인 구조
-![낙서장.jpeg](..%2F..%2F..%2F..%2FDownloads%2F%EB%82%99%EC%84%9C%EC%9E%A5.jpeg)
+![낙서장](https://github.com/minseo2000/deeplearningStudy/assets/59526414/610a43b4-ec3c-4004-9638-6a1b99117686)
+
 
 | 자연어 처리 문제                            |
 |--------------------------------------|
