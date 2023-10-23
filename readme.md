@@ -1,19 +1,5 @@
 # Deep Learning Study files
 
-# Working Contents
-| To Do                                                                                                                                                         | Date       | Hour | REPO LINK                                                                    |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|------|------------------------------------------------------------------------------|
-| mnist datasets by Sequential model                                                                                                                            | 2023.10.10 | 2H   | https://github.com/minseo2000/deeplearningStudy/tree/master/basic_codes      |
-| mnist datasets by CNN model<br/>horse and person datasets by CNN model                                                                                        | 2023.10.17 | 2H   | https://github.com/minseo2000/deeplearningStudy/tree/master/cnn_filter_codes |
-| 1. Image Generator<br/>2. 전이학습<br/>3. 드롭아웃 규제                                                                                                                 | 2023.10.17 | 1H   |                                                                              |
-| tensorflow datasets<br/>tensorflow addons<br/>ETL Process                                                                                                     | 2023.10.18 | 1H   |                                                                              |
-| Word Embedding ( NLP )                                                                                                                                        | 2023.10.19 | 1H   | https://github.com/minseo2000/deeplearningStudy/tree/master/embedding_codes  |
-| 1. Learning rate<br/>2. vocab_size<br/>3. Embedding Dimenssion<br/>4. Model Structure<br/>5. Dropout<br/> 6. Regulation<br/>7. Tensorflow Embedding Projector | 2023.10.20 | 1H   |                                                                              |
-| RNN, LSTM, Bidirectional-LSTM                                                                                                                                 | 2023.10.20 | 1H   |                                                                              |
-| 문자기반, 단어기반 생성 모델 by LSTM                                                                                                                                      | 2023.10.20 | 1H   |                                                                              |
-| kaggle api 사용법                                                                                                                                                | 2023.10.22 |      |                                                                              |
-| Chat_bot.csv datasets 분석하기, 어절,음절,형태소 길이를 기반으로                                                                                                                ||||
-
 ## Working Contents
 | 분야        | Repo Link |
 |-----------|-----------|
@@ -53,9 +39,6 @@
 | Embedding | 3. Optimizer's Learning Rate                  | 과대적합 방지 |       |                         |
 | Embedding | 4. 어휘사전을 구성할 때 특정단어가 많이 발생하는 어휘사전을 사용한다면?     | 과대적합 방지 |       |                         |
 | Embedding | 5. 어휘사전의 4제곱근을 한 수를 차원의 수로 사용하라!              | 과대적합 방지 |       |                         |
-| CNN       | 1. Using ImageGenerator Class for Overfitting |         |       |                         |
-| CNN       | 1. Using ImageGenerator Class for Overfitting |         |       |                         |
-| CNN       | 1. Using ImageGenerator Class for Overfitting |         |       |                         |
 
 
 
