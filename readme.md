@@ -1,18 +1,17 @@
 # Deep Learning Study files
 
+## 공부한 내용 적기
+| 날짜           | 공부한 내용                                       | 링크 |
+|--------------|----------------------------------------------|----|
+| 2023. 10. 24 | 텐서플로우 모델 구현하는 방법 4가지와 사이킷런을 이용한 특징 추출 3가지 방법 |    |
+
+
 ## Working Contents
 | 분야        | Repo Link |
 |-----------|-----------|
 | 시각 처리 공부  |  https://github.com/minseo2000/deeplearningStudy/tree/master/%EC%8B%9C%EA%B0%81         |
 | 언어 처리 공부  |   https://github.com/minseo2000/deeplearningStudy/tree/master/%EC%96%B8%EC%96%B4        |
 | AutoML 공부 |   https://github.com/minseo2000/deeplearningStudy/tree/master/auto_ML        |
-
-
-
-
-
-
-
 
 
 # 목차
