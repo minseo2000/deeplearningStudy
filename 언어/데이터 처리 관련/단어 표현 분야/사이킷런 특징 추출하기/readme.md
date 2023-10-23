@@ -8,4 +8,4 @@
 
 
 ## CountVectorizer 그림 설명
-![낙서장 2.jpeg](..%2F..%2F..%2F..%2F..%2F..%2F..%2FDownloads%2F%EB%82%99%EC%84%9C%EC%9E%A5%202.jpeg)
+![낙서장 2](https://github.com/minseo2000/deeplearningStudy/assets/59526414/4ea05624-ff33-44f7-a0cc-37e8f0c0200a)
