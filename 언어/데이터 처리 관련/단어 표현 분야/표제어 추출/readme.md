@@ -5,4 +5,4 @@
 표제어 추출.py
 
 ## 그림설명
-![2023. 4. 10. - 0 2.jpg](..%2F..%2F..%2F..%2F..%2F..%2F..%2FDownloads%2F2023.%204.%2010.%20-%200%202.jpg)
+![2023  4  10  - 0 2](https://github.com/minseo2000/deeplearningStudy/assets/59526414/1100bacc-d6ba-4d2f-98a5-9f51e35a23b4)
