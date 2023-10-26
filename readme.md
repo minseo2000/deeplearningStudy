@@ -15,7 +15,6 @@
 |----|--------|----|
 |    |        |    |
 
-
 ## Working Contents
 | 분야        | Repo Link |
 |-----------|-----------|
@@ -25,15 +24,14 @@
 | Gan 공부    |https://github.com/minseo2000/deeplearningStudy/tree/master/_gan%EC%B1%85|
 | 음성인식 공부   |https://github.com/minseo2000/deeplearningStudy/tree/master/_%EC%9D%8C%EC%84%B1%EC%9D%B8%EC%8B%9D/%EC%9D%B8%EC%84%B1%EC%9D%B8%EC%8B%9D%20%EC%B1%85|
 
+## 머신러닝 관련 논문
+1. https://arxiv.org -> 논문 사이트
+2. https://paperswithcode.com/  -> 최신 논문과 공식 깃허브 주소를 얻을 수 있다.
+
 # 목차
 1. Model Training Tips
 2. Loss function and optimizer Tip
 3. Datasets tips (tensorflow_datasets, tensorflow_addons)
-4. ETL process
-5. NLP Words
-6. CSV FILE LOADER
-7. Graph_codes
-8. Embedding 시각화 codes
 
 ## basic_codes
 1. fashion mnist classification files (early stopped, dense model)
@@ -128,98 +126,3 @@ train_length = [i for i, _ in enumerate(data)][-1] + 1
 print(train_length)
 ```
 
-# ETL Process (데이터 추출, 변환, 로드)
-- 아래와 같이 구조 설계 시, 데이터나 모델 구조에 덜 민감하도록 데이터 파이프 라인을 만들 수 있다.
-- example codes
-```commandline
-# 데이터 추출
-data = tfds.load('horses_or_humans', split='train', as_supervised=True)
-val_data = tfds.load('horses_or_humans', split='test', as_supervised=True)
-
-# 데이터 변환
-def augmentimages(image, label):
-    image = tf.cast(image, tf.float32)
-    image = (image/255)
-    image = tf.image.random_flip_left_right(image)
-    image = tfa.image.rotate(image, 40, interpolation='NEAREST')
-    return image, label
-
-# 데이터 로드
-train = data.map(augmentimages)
-train_batches = train.shuffle(100).batch(32)
-validation_batches = val_data.batch(32)
-
-```
-
-# NLP Words
-
-| word                     | 설명                                       |
-|--------------------------|------------------------------------------|
-| 토큰                       | {'is' : 1, 'day' : 2}                    |
-| 시퀀스                      | [[3,1,4,5,2]]                            |
-| OOV(out of vocabulary)토큰 | 없는 데이터를 표현하는 토큰                          |
-| 프리패딩                     | 짧은 문장을 긴 문장의 길이에 맞추기 위해 시작 부분을 0으로 채우는 것 |
-
-# CSV FILE LOADER
-
-
-
-# Graph_codes
-```commandline
-# graph codes
-import matplotlib.pyplot as plt
-
-def show_graph(history):
-    # 그래프 출력 
-    # 훈련 과정 기록 가져오기
-    train_loss = history.history['loss']
-    val_loss = history.history['val_loss']
-    train_acc = history.history['accuracy']
-    val_acc = history.history['val_accuracy']
-
-    # 그래프 출력
-    epochs = range(1, len(train_loss) + 1)
-
-    # 손실 그래프
-    plt.figure(figsize=(12, 4))
-    plt.subplot(1, 2, 1)
-    plt.plot(epochs, train_loss, 'b', label='Training Loss')
-    plt.plot(epochs, val_loss, 'r', label='Validation Loss')
-    plt.title('Training and Validation Loss')
-    plt.xlabel('Epochs')
-    plt.ylabel('Loss')
-    plt.legend()
-
-    # 정확도 그래프
-    plt.subplot(1, 2, 2)
-    plt.plot(epochs, train_acc, 'b', label='Training Accuracy')
-    plt.plot(epochs, val_acc, 'r', label='Validation Accuracy')
-    plt.title('Training and Validation Accuracy')
-    plt.xlabel('Epochs')
-    plt.ylabel('Accuracy')
-    plt.legend()
-
-    plt.show()
-```
-
-# Embedding 시각화 codes
-```commandline
-import io
-
-reverse_word_index = dict([(value, key) for (key, value) in word_index.items()])
-
-e = model.layers[0]
-weights = e.get_weights()[0]
-print(weights.shape)
-out_v = io.open('vecs.tsv', 'w', encoding='utf-8')
-out_m = io.open('meta.tsv', 'w', encoding='utf-8')
-
-for word_num in range(1, vocab_size):
-    word = reverse_word_index[word_num]
-    embeddings = weights[word_num]
-    out_m.write(word+'\n')
-    out_v.write('\t'.join([str(x) for x in embeddings])+'\n')
-
-out_v.close()
-out_m.close()
-```
