@@ -22,7 +22,7 @@
 | 시각 처리 공부  |  https://github.com/minseo2000/deeplearningStudy/tree/master/%EC%8B%9C%EA%B0%81         |
 | 언어 처리 공부  |   https://github.com/minseo2000/deeplearningStudy/tree/master/%EC%96%B8%EC%96%B4        |
 | AutoML 공부 |   https://github.com/minseo2000/deeplearningStudy/tree/master/auto_ML        |
-| Gan 공부    ||
+| Gan 공부    |https://github.com/minseo2000/deeplearningStudy/tree/master/_gan%EC%B1%85|
 | 음성인식 공부   ||
 
 # 목차
