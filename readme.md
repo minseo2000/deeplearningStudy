@@ -23,7 +23,7 @@
 | 언어 처리 공부  |   https://github.com/minseo2000/deeplearningStudy/tree/master/%EC%96%B8%EC%96%B4        |
 | AutoML 공부 |   https://github.com/minseo2000/deeplearningStudy/tree/master/auto_ML        |
 | Gan 공부    |https://github.com/minseo2000/deeplearningStudy/tree/master/_gan%EC%B1%85|
-| 음성인식 공부   ||
+| 음성인식 공부   |https://github.com/minseo2000/deeplearningStudy/tree/master/_%EC%9D%8C%EC%84%B1%EC%9D%B8%EC%8B%9D/%EC%9D%B8%EC%84%B1%EC%9D%B8%EC%8B%9D%20%EC%B1%85|
 
 # 목차
 1. Model Training Tips
