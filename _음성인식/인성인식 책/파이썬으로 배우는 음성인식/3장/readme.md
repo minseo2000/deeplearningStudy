@@ -26,3 +26,26 @@
 3. 학습 데이터, 개발 데이터, 평가 데이터로 분리
 4. 음성 파형을 시각화
 5. 코드 분석
+
+
+### Codes
+
+1. 음원 데이터 시각화 하기
+```
+import wave
+import numpy as np
+import matplotlib.pyplot as plt
+
+wav_file = ''
+output = ''
+
+with wave.open(wav_file) as wav:
+    sampling_frequency = wav.getframerate() # 샘플링 주파수 확인
+    sample_size = wav.getsampwidth() # 샘플 사이즈 확인
+    num_channels = wav.getnchannels() # 채널 수 확인
+    num_samples = wav.getnframes() # wav 데이터 샘플 수 확인
+    waveform = wav.readframes(num_samples) # wav 데이터 읽기
+    waveform = np.frombuffer(waveform, dtype=np.int16) # 바이너리 to int16 변환
+
+
+```
